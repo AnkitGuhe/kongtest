@@ -1,0 +1,7 @@
+{
+    "baseUrl": "https://konnect.konghq.com/",
+    "fixturesFolder": "fixtures",
+    "integrationFolder": "cypress/integration",
+    "screenshotsFolder": "screenshots",
+    "supportFile": "cypress/support"
+}

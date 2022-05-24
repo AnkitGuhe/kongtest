@@ -1,0 +1,31 @@
+{
+  "name": "kong",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open --env allure=true",
+    "cy:run": "cypress run --env allure=true",
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots cypress/videos || true",
+    "posttest": "npm run allure:report"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.26.5",
+    "cypress": "^9.5.4"
+  },
+  "dependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-node": "^2.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.0",
+    "randomstring": "^1.2.2"
+  }
+}
