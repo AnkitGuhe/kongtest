@@ -1,25 +1,4 @@
-# name: basic
-# on: [push]
-# jobs:
-#   cypress-run:
-#     runs-on: ubuntu-20.04
-
-#     steps:
-#       - name: Checkout
-#         uses: actions/checkout@v2
-#       - name: Cypress run
-#         uses: cypress-io/github-action@v2
-#         fail-fast: false
-#         matrix:
-#         containers: [1, 2]
-#         with:
-#           command: npm run cy:run
-#         # when setting "plain" environment variables
-#         # if we want to pass Cypress to read them
-#         # we need to prefix them with "CYPRESS_"
-#         # https://on.cypress.io/environment-variables
-
-name: Parallel Cypress Tests
+name: Kong Parallel Cypress Tests
 
 on: [push]
 
@@ -30,7 +9,6 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # run 3 copies of the current job in parallel
         containers: [1, 2]
     steps:
       - name: Checkout
