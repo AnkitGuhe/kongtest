@@ -12,9 +12,9 @@
 
 | Tools             | Links                                                                                                                                                                                                                             |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| CodeFresh         | https://codefresh.afea.live.use1a.on.epicgames.com/pipelines/edit/new/builds?id=61fa19fb93cf4740e4334a46&pipeline=Testing-%20SPT%20Cypress%20Demo&projects=devportal-src&projectId=600a9bd210699f77f707557f&filter=page:1         |
-| GitHub            | https://github.ol.epicgames.net/online-web/spt-e2e-cypress-tests                                                                                                                                                                  |
-| TestIm            | https://app.testim.io/#/project/C0VF2OGsRmAmA4lgpR14/branch/master/automate/tests/lqruvb61P3R7azlq                                                                                                                       |
-| Cypress Dashboard | https://dashboard.cypress.io/organizations/f3b2ef0f-326c-4b6f-9687-296518707749/projects   
-| JIRA board        | https://jira.it.epicgames.com/browse/PT-10330
+| CodeFresh         |          |
+| GitHub                                                                                                                                                                           |
+| TestIm            |                                                                                                                      |
+| Cypress Dashboard |    
+| JIRA board        | 
                 
