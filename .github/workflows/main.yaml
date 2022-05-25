@@ -1,0 +1,20 @@
+name: basic
+on: [push]
+jobs:
+  cypress-run:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        # execute Cypress using a custom test command
+        with:
+          # verifies the number of passing tests
+          # and passes a variable to Cypress
+          # to be read using Cypress.env("lastName")
+          command: npm run cy:run
+        # when setting "plain" environment variables
+        # if we want to pass Cypress to read them
+        # we need to prefix them with "CYPRESS_"
+        # https://on.cypress.io/environment-variables
