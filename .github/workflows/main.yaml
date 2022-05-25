@@ -42,9 +42,10 @@ jobs:
           command: npm run cy:run
           record: true
           parallel: true
+
       - name: Generate Allure report
         if: always()
-        uses: afiore/action-allure-report@v0.1.0
+        uses: QuintilianoNery/action-allure-report-V2@0.2.0
 
       - name: Commit report results
         if: always()
@@ -53,7 +54,6 @@ jobs:
             git config --local user.name "GitHub Action"
             git add allure-report -f
             git add allure-results -f
-            git add allure-history -f
             git commit -m "[chore] autogenerate Allure report" -a
       - name: Push changes
         if: always()
