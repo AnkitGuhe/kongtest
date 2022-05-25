@@ -3,5 +3,6 @@
     "fixturesFolder": "fixtures",
     "integrationFolder": "cypress/integration",
     "screenshotsFolder": "screenshots",
-    "supportFile": "cypress/support"
+    "supportFile": "cypress/support",
+    "projectId": "9jrfso"
 }
