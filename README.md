@@ -5,8 +5,8 @@
 ## Tech
 
 - [VSCode](code.visualstudio.com)- Editor: Free, Built on open source, Runs everywhere!
-- [node.js] - evented I/O for the backend
-- [cypress](cypress.io) - Fast, easy and reliable testing for anything that runs in a browser.
+- [node.js] - event I/O for the backend
+- [cypress](cypress. io) - Fast, easy and reliable testing for anything that runs in a browser.
 - [Javascript](https://www.javascript.com/) - world's most popular programming language.
 - [Allure-reports](https://docs.qameta.io/allure/) - Allure Framework is a flexible lightweight multi-language test report tool
 
@@ -28,7 +28,7 @@ Stop guessing why your tests are failing. Debug directly from familiar tools lik
 
 ###### Real time reloads
 
-Cypress automatically reloads whenever you make changes to your tests. See commands execute in real time in your app.
+Cypress automatically reloads whenever you make changes to your tests. See commands execute in real-time in your app.
 
 ###### Automatic waiting
 
@@ -36,11 +36,11 @@ Never add waits or sleeps to your tests. Cypress automatically waits for command
 
 ###### Spies, stubs, and clocks
 
-Verify and control the behavior of functions, server responses, or timers. The same functionality you love from unit testing is right at your fingertips.
+Verify and control the behaviour of functions, server responses, or timers. The same functionality you love from unit testing is right at your fingertips.
 
 ###### Network traffic control
 
-Easily control, stub, and test edge cases without involving your server. You can stub network traffic however you like.
+Easily control stub, and test edge cases without involving your server. You can stub network traffic however you like.
 
 ###### Consistent results
 
@@ -48,7 +48,7 @@ Our architecture doesn’t use Selenium or WebDriver. Say hello to fast, consist
 
 ###### Screenshots and videos
 
-View screenshots taken automatically on failure, or videos of your entire test suite when run headlessly.
+View screenshots were taken automatically on failure, or videos of your entire test suite when run headlessly.
 
 ## Best Practices
 
@@ -65,8 +65,8 @@ Selector Recommended Notes
 
 ###### _Each test is divided into two parts_
 
-- _We will be following hybrid POM Structure where we each test will have its page_
-- _Each page will have its own class containing actions inside a class and locators inside an object_
+- _We will be following a hybrid POM Structure where each test will have its page_
+- _Each page will have its class containing actions inside a class and locators inside an object_
 
 _Example_
 
@@ -82,9 +82,9 @@ _Example_
 Cypress
 
 - Integration: Contains test files
-- Pages: Contans the pages for each test file
+- Pages: Contains the pages for each test file
 - reports: Contains report for every run
-- Support: Contains support file for globally used actions (Command.js)
+- Support: Contains a support file for globally used actions (Command.js)
 - Fixtures: Contains images
 
 Install the dependencies and devDependencies and start the server.
@@ -107,7 +107,7 @@ For cypress run with CLI- headless...
 npm run cy:run
 ```
 
-For cypress run with CI-Paralle...
+For cypress run with CI-Parallel...
 
 ```sh
 npm run cy:run-ci
