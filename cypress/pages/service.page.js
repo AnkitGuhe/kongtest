@@ -1,40 +1,48 @@
 class Service {
-  getAddNewService() {
-    return cy.get('[data-tourid="create-service-btn"]');
+  getSearchBar(serviceName) {
+    return cy.get('input[type="search"]');
   }
 
-  getServiceName() {
-    return cy.get("#name");
+  getSearchResults(serviceName) {
+    return cy
+      .get("#autosuggest-autosuggest__results")
+      .contains("div", "Service")
+      .parent()
+      .contains(serviceName);
   }
 
-  getServiceVersion() {
-    return cy.get("#version");
+  getServiceHeaders(serviceName) {
+    return cy.contains(serviceName);
   }
 
   getServiceDescription() {
-    return cy.get("#description");
+    return cy.get('[data-testid="packageDescription"]');
   }
 
-  getServiceCreateButton() {
-    return cy.get('button[type="submit"]').should("contain", "Create");
+  getServiceActionMenu() {
+    return cy.get('[data-testid="service-package-actions"]');
   }
 
-  verifyServiceCreatedMessage() {
-    return cy.get(".message").should("contain", "Created Service");
+  getServiceOverview() {
+    return cy.get('[data-testid="menu-item-Overview"]');
   }
 
-  verifyServiceTitle(service) {
-    return cy.get('[data-testid="packageName"]').should("contain", service);
+  getServiceVersion() {
+    return cy.get('[data-testid="menu-item-Versions"]');
   }
 
-  verifyCreateNewService() {
-    return cy.get('[data-testid="title-create new service"]');
+  getDeleteServiceButton() {
+    return cy.get('[data-testid="delete-service"]');
   }
 
-  verifyCreateNewServiceDescription() {
-    return cy.contains(
-      "Create a service to manage and proxy an existing API or publish to a portal. Services contain one or more versions. "
-    );
+  getConfirmDeleteServiceButton() {
+    return cy.get('[data-testid="confirm-delete"]');
+  }
+
+  verifyServiceDeletedMessage() {
+    return cy
+      .get(".message")
+      .should("contain", "Successfully deleted Service.");
   }
 }
 

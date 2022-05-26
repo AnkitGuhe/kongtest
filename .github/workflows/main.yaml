@@ -17,25 +17,6 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          command: npm run cy:run
+          command: npm run cy:run-ci
           record: true
           parallel: true
-
-      - name: Generate Allure report
-        if: always()
-        uses: QuintilianoNery/action-allure-report-V2@0.2.0
-
-      - name: Commit report results
-        if: always()
-        run: |
-            git config --local user.email "action@github.com"
-            git config --local user.name "GitHub Action"
-            git add allure-report -f
-            git add allure-results -f
-            git commit -m "[chore] autogenerate Allure report" -a
-      - name: Push changes
-        if: always()
-        uses: ad-m/github-push-action@master
-        with:
-            github_token: '${{ secrets.GITHUB_TOKEN }}'
-            force: true

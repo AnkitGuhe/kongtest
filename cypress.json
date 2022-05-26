@@ -4,5 +4,9 @@
     "integrationFolder": "cypress/integration",
     "screenshotsFolder": "screenshots",
     "supportFile": "cypress/support",
-    "projectId": "9jrfso"
+    "projectId": "9jrfso",
+    "retries": {
+        "runMode": 2,
+        "openMode": 0
+    }
 }
