@@ -1,4 +1,3 @@
-import Service from "../pages/createService.page";
 import LoginPage from "../pages/login.page";
 
 Cypress.Commands.add("login", (email, password) => {

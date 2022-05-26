@@ -46,10 +46,12 @@ describe("Add new Service Page", () => {
     createService.getServiceVersion().type(`${serviceName}-version`);
     createService.getServiceDescription().type(`${serviceName}-description`);
     createService.getServiceCreateButton().click();
-    cy.get('div[role="alert"]').should(
-      "have.text",
-      `Key (org_id, name)=(ca3201f3-f73f-4119-b39b-09eabe186e3b, ${serviceName}) already exists.`
-    );
+    createService
+      .verifyAlertMessage()
+      .should(
+        "have.text",
+        `Key (org_id, name)=(ca3201f3-f73f-4119-b39b-09eabe186e3b, ${serviceName}) already exists.`
+      );
   });
 
   it("should not be able to create new Service: No Service name", () => {

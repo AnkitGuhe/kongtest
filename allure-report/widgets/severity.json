@@ -1,0 +1,121 @@
+[ {
+  "uid" : "1e5c947509f98bb2",
+  "name" : "should be able to create new Service",
+  "time" : {
+    "start" : 1653575383369,
+    "stop" : 1653575391439,
+    "duration" : 8070
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "16bde6a84ffa6401",
+  "name" : "should not be able to login : Invalid password",
+  "time" : {
+    "start" : 1653575443524,
+    "stop" : 1653575445981,
+    "duration" : 2457
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "daae6318ed5fcfdb",
+  "name" : "should be able to login",
+  "time" : {
+    "start" : 1653575437043,
+    "stop" : 1653575441524,
+    "duration" : 4481
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3804d32426592999",
+  "name" : "should not be able to create new Service with existing name",
+  "time" : {
+    "start" : 1653575391553,
+    "stop" : 1653575397881,
+    "duration" : 6328
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "366a79651426f64f",
+  "name" : "should be able to verify new Service page",
+  "time" : {
+    "start" : 1653575453171,
+    "stop" : 1653575459433,
+    "duration" : 6262
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "714245080386702e",
+  "name" : "should not be able to create new Service: No Service name",
+  "time" : {
+    "start" : 1653575397905,
+    "stop" : 1653575403493,
+    "duration" : 5588
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6c47d5605ca5256f",
+  "name" : "should not be able to create new Service: No Service Version",
+  "time" : {
+    "start" : 1653575410053,
+    "stop" : 1653575415397,
+    "duration" : 5344
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "247d3fee1a6b5dd3",
+  "name" : "should not be able to click forgot password",
+  "time" : {
+    "start" : 1653575447159,
+    "stop" : 1653575447539,
+    "duration" : 380
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4dcdbf953be52e1",
+  "name" : "should not be able to login : no email address",
+  "time" : {
+    "start" : 1653575442942,
+    "stop" : 1653575443518,
+    "duration" : 576
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d481b391e16836a4",
+  "name" : "should not be able to login : no password",
+  "time" : {
+    "start" : 1653575445989,
+    "stop" : 1653575447147,
+    "duration" : 1158
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e531766396311df5",
+  "name" : "should be able to create new Service: No Service description",
+  "time" : {
+    "start" : 1653575403513,
+    "stop" : 1653575409962,
+    "duration" : 6449
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a1206d1bf366730",
+  "name" : "should not be able to login : Invalid email",
+  "time" : {
+    "start" : 1653575441548,
+    "stop" : 1653575442936,
+    "duration" : 1388
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

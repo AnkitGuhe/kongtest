@@ -1,0 +1,1704 @@
+{
+  "uid" : "1e5c947509f98bb2",
+  "name" : "should be able to create new Service",
+  "fullName" : "should be able to create new Service",
+  "historyId" : "d1eff149118cd3a9f65296876d8d445b",
+  "time" : {
+    "start" : 1653575383369,
+    "stop" : 1653575391439,
+    "duration" : 8070
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 1,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1653575383371,
+        "stop" : 1653575386852,
+        "duration" : 3481
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "intercept (\"POST\"; \"/api/service_packages/service_versions\")",
+        "time" : {
+          "start" : 1653575383373,
+          "stop" : 1653575383380,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"createService\")",
+        "time" : {
+          "start" : 1653575383380,
+          "stop" : 1653575383381,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "intercept (\"POST\"; \"/api/auth\")",
+        "time" : {
+          "start" : 1653575383381,
+          "stop" : 1653575383384,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"login\")",
+        "time" : {
+          "start" : 1653575383384,
+          "stop" : 1653575383384,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "visit /",
+        "time" : {
+          "start" : 1653575383384,
+          "stop" : 1653575385289,
+          "duration" : 1905
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "POST https://api.segment.io/v1/t",
+        "time" : {
+          "start" : 1653575385288,
+          "stop" : 1653575385288,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "login (\"quality+ankit.guhe@konghq.com\"; \"Testing123\")",
+        "time" : {
+          "start" : 1653575385289,
+          "stop" : 1653575386843,
+          "duration" : 1554
+        },
+        "status" : "failed",
+        "steps" : [ {
+          "name" : "get #email",
+          "time" : {
+            "start" : 1653575385290,
+            "stop" : 1653575385308,
+            "duration" : 18
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "type quality+ankit.guhe@konghq.com",
+          "time" : {
+            "start" : 1653575385308,
+            "stop" : 1653575385802,
+            "duration" : 494
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "get #password",
+          "time" : {
+            "start" : 1653575385802,
+            "stop" : 1653575385808,
+            "duration" : 6
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "type Testing123",
+          "time" : {
+            "start" : 1653575385808,
+            "stop" : 1653575386081,
+            "duration" : 273
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+          "time" : {
+            "start" : 1653575386081,
+            "stop" : 1653575386081,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "get button[type=\"submit\"]",
+          "time" : {
+            "start" : 1653575386081,
+            "stop" : 1653575386087,
+            "duration" : 6
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "click",
+          "time" : {
+            "start" : 1653575386087,
+            "stop" : 1653575386173,
+            "duration" : 86
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "wait @login",
+          "time" : {
+            "start" : 1653575386173,
+            "stop" : 1653575386843,
+            "duration" : 670
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "POST 200 /api/auth",
+          "time" : {
+            "start" : 1653575386842,
+            "stop" : 1653575386842,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+          "time" : {
+            "start" : 1653575386842,
+            "stop" : 1653575386842,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "POST https://api.segment.io/v1/i",
+          "time" : {
+            "start" : 1653575386842,
+            "stop" : 1653575386842,
+            "duration" : 0
+          },
+          "status" : "failed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "page load --page loaded--",
+          "time" : {
+            "start" : 1653575386842,
+            "stop" : 1653575386842,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "new url https://konnect.konghq.com/servicehub",
+          "time" : {
+            "start" : 1653575386842,
+            "stop" : 1653575386842,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "GET https://konnect.konghq.com/api/userinfo",
+          "time" : {
+            "start" : 1653575386843,
+            "stop" : 1653575386843,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 14,
+        "hasContent" : true
+      }, {
+        "name" : "its .response.statusCode",
+        "time" : {
+          "start" : 1653575386843,
+          "stop" : 1653575386852,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "assert expected **200** to equal **200**",
+        "time" : {
+          "start" : 1653575386852,
+          "stop" : 1653575386852,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "200"
+        }, {
+          "name" : "expected",
+          "value" : "200"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 23,
+      "hasContent" : true
+    }, {
+      "name" : "get [data-tourid=\"create-service-btn\"]",
+      "time" : {
+        "start" : 1653575386854,
+        "stop" : 1653575387521,
+        "duration" : 667
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "POST https://bam.nr-data.net/resources/1/NRJS-f3d8b5b49ab2af1ef7f?a=508003333&sa=1&v=1208.49599aa&t=Unnamed Transaction&rst=529&ck=1&ref=https://konnect.konghq.com/servicehub&st=1653575386605",
+      "time" : {
+        "start" : 1653575387518,
+        "stop" : 1653575387518,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "POST https://bam.nr-data.net/events/1/NRJS-f3d8b5b49ab2af1ef7f?a=508003333&sa=1&v=1208.49599aa&t=Unnamed Transaction&rst=551&ck=1&ref=https://konnect.konghq.com/servicehub",
+      "time" : {
+        "start" : 1653575387519,
+        "stop" : 1653575387519,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+      "time" : {
+        "start" : 1653575387519,
+        "stop" : 1653575387519,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "POST https://api.segment.io/v1/i",
+      "time" : {
+        "start" : 1653575387519,
+        "stop" : 1653575387519,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET /api/usage",
+      "time" : {
+        "start" : 1653575387519,
+        "stop" : 1653575387519,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET 200 /api/search?q=",
+      "time" : {
+        "start" : 1653575387519,
+        "stop" : 1653575387519,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET https://konnect.konghq.com/api/registrations?fields=&s={\"$and\":[{\"$or\":[{\"status\":{\"$eq\":\"pending\"}}]}]}",
+      "time" : {
+        "start" : 1653575387519,
+        "stop" : 1653575387519,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET https://konnect.konghq.com/api/developers?fields=&s={\"$and\":[{\"$or\":[{\"status\":{\"$eq\":\"pending\"}}]}]}",
+      "time" : {
+        "start" : 1653575387519,
+        "stop" : 1653575387519,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET /api/control_planes",
+      "time" : {
+        "start" : 1653575387519,
+        "stop" : 1653575387519,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "POST 200 https://bam.nr-data.net/resources/1/NRJS-f3d8b5b49ab2af1ef7f?a=508003333&sa=1&v=1208.49599aa&t=Unnamed%20Transaction&rst=529&ck=1&ref=https://konnect.konghq.com/servicehub&st=1653575386605",
+      "time" : {
+        "start" : 1653575387519,
+        "stop" : 1653575387519,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "POST 200 https://bam.nr-data.net/events/1/NRJS-f3d8b5b49ab2af1ef7f?a=508003333&sa=1&v=1208.49599aa&t=Unnamed%20Transaction&rst=551&ck=1&ref=https://konnect.konghq.com/servicehub",
+      "time" : {
+        "start" : 1653575387519,
+        "stop" : 1653575387519,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET 200 /api/registrations?fields=&s=%7B%22%24and%22%3A%5B%7B%22%24or%22%3A%5B%7B%22status%22%3A%7B%22%24eq%22%3A%22pending%22%7D%7D%5D%7D%5D%7D",
+      "time" : {
+        "start" : 1653575387519,
+        "stop" : 1653575387519,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET 200 /api/developers?fields=&s=%7B%22%24and%22%3A%5B%7B%22%24or%22%3A%5B%7B%22status%22%3A%7B%22%24eq%22%3A%22pending%22%7D%7D%5D%7D%5D%7D",
+      "time" : {
+        "start" : 1653575387520,
+        "stop" : 1653575387520,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+      "time" : {
+        "start" : 1653575387520,
+        "stop" : 1653575387520,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+      "time" : {
+        "start" : 1653575387520,
+        "stop" : 1653575387520,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+      "time" : {
+        "start" : 1653575387520,
+        "stop" : 1653575387520,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+      "time" : {
+        "start" : 1653575387520,
+        "stop" : 1653575387520,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+      "time" : {
+        "start" : 1653575387520,
+        "stop" : 1653575387520,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "POST https://api-iam.intercom.io/messenger/web/ping",
+      "time" : {
+        "start" : 1653575387520,
+        "stop" : 1653575387520,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "POST https://api.segment.io/v1/p",
+      "time" : {
+        "start" : 1653575387520,
+        "stop" : 1653575387520,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET https://konnect.konghq.com/api/usage",
+      "time" : {
+        "start" : 1653575387520,
+        "stop" : 1653575387520,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET https://konnect.konghq.com/api/service_packages?fields=&s={\"$and\":[{\"name\":{\"$contL\":\"\"}}]}&&&&&limit=40&offset=0&page=1",
+      "time" : {
+        "start" : 1653575387520,
+        "stop" : 1653575387520,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET https://konnect.konghq.com/api/service_packages?fields=&s={\"$and\":[{\"name\":{\"$contL\":\"\"}}]}&&&&&limit=40&offset=0&page=2",
+      "time" : {
+        "start" : 1653575387521,
+        "stop" : 1653575387521,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+      "time" : {
+        "start" : 1653575387521,
+        "stop" : 1653575387521,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+      "time" : {
+        "start" : 1653575387521,
+        "stop" : 1653575387521,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET https://konnect.konghq.com/api/control_planes/8141bd4e-ef8d-483c-a6d8-01407caabf4c/default/clustering/data-planes?count_dp=true",
+      "time" : {
+        "start" : 1653575387521,
+        "stop" : 1653575387521,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "click",
+      "time" : {
+        "start" : 1653575387521,
+        "stop" : 1653575388597,
+        "duration" : 1076
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+      "time" : {
+        "start" : 1653575388594,
+        "stop" : 1653575388594,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET 200 /api/service_packages?fields=&s=%7B%22%24and%22%3A%5B%7B%22name%22%3A%7B%22%24contL%22%3A%22%22%7D%7D%5D%7D&&&&&limit=40&offset=0&page=1",
+      "time" : {
+        "start" : 1653575388594,
+        "stop" : 1653575388594,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET 200 /api/service_packages?fields=&s=%7B%22%24and%22%3A%5B%7B%22name%22%3A%7B%22%24contL%22%3A%22%22%7D%7D%5D%7D&&&&&limit=40&offset=0&page=2",
+      "time" : {
+        "start" : 1653575388594,
+        "stop" : 1653575388594,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+      "time" : {
+        "start" : 1653575388594,
+        "stop" : 1653575388594,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+      "time" : {
+        "start" : 1653575388594,
+        "stop" : 1653575388594,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+      "time" : {
+        "start" : 1653575388594,
+        "stop" : 1653575388594,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+      "time" : {
+        "start" : 1653575388594,
+        "stop" : 1653575388594,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+      "time" : {
+        "start" : 1653575388594,
+        "stop" : 1653575388594,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "POST 200 https://api-iam.intercom.io/messenger/web/ping",
+      "time" : {
+        "start" : 1653575388595,
+        "stop" : 1653575388595,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "new url https://konnect.konghq.com/servicehub/create",
+      "time" : {
+        "start" : 1653575388595,
+        "stop" : 1653575388595,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "POST https://api.segment.io/v1/p",
+      "time" : {
+        "start" : 1653575388596,
+        "stop" : 1653575388596,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "get [data-testid=\"title-create new service\"]",
+      "time" : {
+        "start" : 1653575388597,
+        "stop" : 1653575388613,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **<div.konnect-title.justify-content-start.flex-grow-1>** to be **visible**",
+      "time" : {
+        "start" : 1653575388613,
+        "stop" : 1653575388613,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "contains Create a service to manage and proxy an existing API or publish to a portal. Services contain one or more versions. ",
+      "time" : {
+        "start" : 1653575388613,
+        "stop" : 1653575388643,
+        "duration" : 30
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **<p.text-muted.mb-0.mt-0>** to be **visible**",
+      "time" : {
+        "start" : 1653575388643,
+        "stop" : 1653575388643,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "get #name",
+      "time" : {
+        "start" : 1653575388643,
+        "stop" : 1653575388657,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "type cypress-test-FzW5J",
+      "time" : {
+        "start" : 1653575388657,
+        "stop" : 1653575389210,
+        "duration" : 553
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+      "time" : {
+        "start" : 1653575389210,
+        "stop" : 1653575389210,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "POST https://api-iam.intercom.io/messenger/web/ping",
+      "time" : {
+        "start" : 1653575389210,
+        "stop" : 1653575389210,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET /api/control_planes",
+      "time" : {
+        "start" : 1653575389210,
+        "stop" : 1653575389210,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET /api/usage",
+      "time" : {
+        "start" : 1653575389210,
+        "stop" : 1653575389210,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "get #version",
+      "time" : {
+        "start" : 1653575389211,
+        "stop" : 1653575389224,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "type cypress-test-FzW5J-version",
+      "time" : {
+        "start" : 1653575389224,
+        "stop" : 1653575389891,
+        "duration" : 667
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+      "time" : {
+        "start" : 1653575389890,
+        "stop" : 1653575389890,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+      "time" : {
+        "start" : 1653575389890,
+        "stop" : 1653575389890,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "get #description",
+      "time" : {
+        "start" : 1653575389891,
+        "stop" : 1653575389903,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "type cypress-test-FzW5J-description",
+      "time" : {
+        "start" : 1653575389903,
+        "stop" : 1653575390609,
+        "duration" : 706
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "get button[type=\"submit\"]",
+      "time" : {
+        "start" : 1653575390609,
+        "stop" : 1653575390630,
+        "duration" : 21
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **<button.k-button.mr-3.primary>** to contain **Create**",
+      "time" : {
+        "start" : 1653575390630,
+        "stop" : 1653575390630,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "click",
+      "time" : {
+        "start" : 1653575390630,
+        "stop" : 1653575390751,
+        "duration" : 121
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "POST /api/service_packages/service_versions",
+      "time" : {
+        "start" : 1653575390751,
+        "stop" : 1653575390751,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "wait @createService",
+      "time" : {
+        "start" : 1653575390751,
+        "stop" : 1653575390886,
+        "duration" : 135
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+      "time" : {
+        "start" : 1653575390886,
+        "stop" : 1653575390886,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "its .response.statusCode",
+      "time" : {
+        "start" : 1653575390886,
+        "stop" : 1653575390890,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **201** to equal **201**",
+      "time" : {
+        "start" : 1653575390890,
+        "stop" : 1653575390890,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "201"
+      }, {
+        "name" : "expected",
+        "value" : "201"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "get .message",
+      "time" : {
+        "start" : 1653575390890,
+        "stop" : 1653575390905,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **<div.message>** to contain **Created Service**",
+      "time" : {
+        "start" : 1653575390905,
+        "stop" : 1653575390905,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "get [data-testid=\"packageName\"]",
+      "time" : {
+        "start" : 1653575390905,
+        "stop" : 1653575391437,
+        "duration" : 532
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "new url https://konnect.konghq.com/servicehub/743ef150-5749-4cfe-a1aa-cb5d16a3447b/overview",
+      "time" : {
+        "start" : 1653575391436,
+        "stop" : 1653575391436,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "POST https://api.segment.io/v1/p",
+      "time" : {
+        "start" : 1653575391436,
+        "stop" : 1653575391436,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET https://konnect.konghq.com/api/service_packages?fields=&s={\"$and\":[{\"id\":{\"$ne\":\"743ef150-5749-4cfe-a1aa-cb5d16a3447b\"}},{\"name\":{\"$contL\":\"\"}}]}&&&&&limit=5",
+      "time" : {
+        "start" : 1653575391436,
+        "stop" : 1653575391436,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET /api/service_packages/743ef150-5749-4cfe-a1aa-cb5d16a3447b",
+      "time" : {
+        "start" : 1653575391436,
+        "stop" : 1653575391436,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET /api/application_registrations/service_packages/743ef150-5749-4cfe-a1aa-cb5d16a3447b",
+      "time" : {
+        "start" : 1653575391436,
+        "stop" : 1653575391436,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET /api/portals",
+      "time" : {
+        "start" : 1653575391436,
+        "stop" : 1653575391436,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET /api/vitals/service_package/743ef150-5749-4cfe-a1aa-cb5d16a3447b/chart?start=1653553800&end=1653575400",
+      "time" : {
+        "start" : 1653575391436,
+        "stop" : 1653575391436,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET https://konnect.konghq.com/api/service_packages/743ef150-5749-4cfe-a1aa-cb5d16a3447b",
+      "time" : {
+        "start" : 1653575391437,
+        "stop" : 1653575391437,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET https://konnect.konghq.com/api/service_versions?fields=&s={\"$and\":[{\"service_package_id\":{\"$eq\":\"743ef150-5749-4cfe-a1aa-cb5d16a3447b\"}},{\"version\":{\"$contL\":\"\"}}]}&filter=&or=&sort=&join=&limit=100&offset=0&page=1",
+      "time" : {
+        "start" : 1653575391437,
+        "stop" : 1653575391437,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET https://konnect.konghq.com/api/service_versions?fields=&s={\"$and\":[{\"service_package_id\":{\"$eq\":\"743ef150-5749-4cfe-a1aa-cb5d16a3447b\"}},{\"version\":{\"$contL\":\"\"}}]}&filter=&or=&sort=&join=&limit=100&offset=0&page=2",
+      "time" : {
+        "start" : 1653575391437,
+        "stop" : 1653575391437,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET https://konnect.konghq.com/api/service_packages/743ef150-5749-4cfe-a1aa-cb5d16a3447b/documents",
+      "time" : {
+        "start" : 1653575391437,
+        "stop" : 1653575391437,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **<div#editable-wrapper.k-inline-edit>** to contain **cypress-test-FzW5J**",
+      "time" : {
+        "start" : 1653575391437,
+        "stop" : 1653575391437,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "POST https://api-iam.intercom.io/messenger/web/ping",
+      "time" : {
+        "start" : 1653575391437,
+        "stop" : 1653575391437,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET /api/service_packages?fields=&s=%7B%22%24and%22%3A%5B%7B%22id%22%3A%7B%22%24ne%22%3A%22743ef150-5749-4cfe-a1aa-cb5d16a3447b%22%7D%7D%2C%7B%22name%22%3A%7B%22%24contL%22%3A%22%22%7D%7D%5D%7D&&&&&limit=5",
+      "time" : {
+        "start" : 1653575391437,
+        "stop" : 1653575391437,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET /api/service_versions?fields=&s=%7B%22%24and%22%3A%5B%7B%22service_package_id%22%3A%7B%22%24eq%22%3A%22743ef150-5749-4cfe-a1aa-cb5d16a3447b%22%7D%7D%2C%7B%22version%22%3A%7B%22%24contL%22%3A%22%22%7D%7D%5D%7D&filter=&or=&sort=&join=&limit=100&offset=0&page=1",
+      "time" : {
+        "start" : 1653575391437,
+        "stop" : 1653575391437,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+      "time" : {
+        "start" : 1653575391437,
+        "stop" : 1653575391437,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "uncaught exception TypeError: Cannot set properties of undefined (setting 'status')",
+      "time" : {
+        "start" : 1653575391437,
+        "stop" : 1653575391437,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET https://konnect.konghq.com/api/application_registrations/service_packages/743ef150-5749-4cfe-a1aa-cb5d16a3447b",
+      "time" : {
+        "start" : 1653575391437,
+        "stop" : 1653575391437,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "GET /api/service_versions?fields=&s=%7B%22%24and%22%3A%5B%7B%22service_package_id%22%3A%7B%22%24eq%22%3A%22743ef150-5749-4cfe-a1aa-cb5d16a3447b%22%7D%7D%2C%7B%22version%22%3A%7B%22%24contL%22%3A%22%22%7D%7D%5D%7D&filter=&or=&sort=&join=&limit=100&offset=0&page=2",
+      "time" : {
+        "start" : 1653575391437,
+        "stop" : 1653575391437,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 109,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Add new Service Page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "9fa43c90e1406a62",
+      "status" : "passed",
+      "time" : {
+        "start" : 1653575242206,
+        "stop" : 1653575249680,
+        "duration" : 7474
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1e5c947509f98bb2.json",
+  "parameterValues" : [ ]
+}

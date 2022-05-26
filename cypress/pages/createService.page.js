@@ -36,6 +36,10 @@ class CreateService {
       "Create a service to manage and proxy an existing API or publish to a portal. Services contain one or more versions. "
     );
   }
+
+  verifyAlertMessage() {
+    return cy.get('div[role="alert"]');
+  }
 }
 
 export default new CreateService();
